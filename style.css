@@ -1,6 +1,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -10,7 +11,7 @@ h1 {
 }
 
 #container {
-    background-color: rgb(200, 225, 226);
+    background-color: #c8e6db;
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -44,8 +45,9 @@ h1 {
     display: block;
     margin: 10px auto 5px;
     width: 70%;
-    border-radius: 2px;
-    border: 4px solid darkcyan;
+    border-radius: 10px;
+    border: 4px solid #ff686b;
+    box-shadow: 10px 5px 5px #ffa69e;
 }
 
 #contact > h3, #projects > h3, #links > h3 {
@@ -55,6 +57,8 @@ h1 {
 }
 
 #links > ul, #links > ul > li {
+    margin-left: 0;
+    padding-left: 0;
     margin-bottom: 0;
 }
 
@@ -83,20 +87,20 @@ h1 {
 }
 
 .bold > a {
-    background-color: gold;
+    background-color: #ffa69e;
     padding: 2px;
     border-radius: 3px;
-    color: darkcyan;
+    color: #84dcc6;
 }
 
 .bold > a:active {
-    background-color: goldenrod;
-    color: rgb(1, 117, 117);
+    background-color: #ff686b;
+    color: #ffffff;
 }
 
 .bold > a:visited {
-    background-color: darkcyan;
-    color: gold;
+    background-color: #ff686b;
+    color: #a5ffd6
 }
 
 #links {
@@ -122,9 +126,9 @@ h1 {
 }
 
 #bio > p {
-    border-radius: 2px;
-    border: 4px solid darkcyan;
-    box-shadow: 10px 5px 5px rgb(1, 117, 117);
+    border-radius: 10px;
+    border: 4px solid #ff686b;
+    box-shadow: 10px 5px 5px #ffa69e;
     padding: 10%;
     height: 80%;
     margin: 0 10% 10% 10%;
@@ -144,12 +148,62 @@ h2 {
     margin-right: 0;
 }
 
+#tabs > button > img {
+    width: 80%;
+}
+
 button {
     height: 25%;
     margin: 0;
-    background-color: gold;
-    border: 4px solid darkcyan;
+    background-color: #ffa69e;
+    border: 4px solid #ff686b;
+    border-right: 0;
     border-radius: 10px 0 0 10px;
+    transition: all 0.05s ease-in-out; 
+}
+
+button:active {
+    transform: scale(0.9);
+    background-color: #df8f88;
+    border: 4px solid #cf5557;
+    border-right: 0;
+    box-shadow: 10px 5px 5px #ffa69e;
+}
+
+.hidden {
+    right: -10%;
+    padding: 2% 7% 2% 1%;
+}
+
+.job_title {
+    margin-top: 5px;
+}
+
+.job_title, .job_name, .job_dates, .job_desc  {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.job_title {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.job_dates {
+    font-style: italic;
+}
+
+#work {
+    width: 0%;
+    top: 0%;
+    transform: translate(0,0,0,-50%);
+    text-align: left;
+    position: absolute;
+    background-color: #ffa69e;
+    border: 4px solid #ff686b;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 10px 5px 5px #ffa69e;
 }
 
 @media screen and (max-width: 480px) {
