@@ -1,8 +1,14 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
 h1 {
     font-size: 2.5rem;
     text-align: center;
     margin: 10px auto 5px;
 }
+
 #container {
     background-color: rgb(200, 225, 226);
     display: flex;
@@ -12,30 +18,44 @@ h1 {
     margin-right: 0;
 }
 
+#mobile {
+    flex: 9;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#head, #links, #projects {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
 #about {
     flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #photo {
     display: block;
     margin: 10px auto 5px;
-    height: 200px;
+    width: 70%;
     border-radius: 2px;
     border: 4px solid darkcyan;
 }
 
-h3 {
+#contact > h3, #projects > h3, #links > h3 {
     text-decoration: underline;
-    margin: 2px auto 5px auto;
+    text-align: center;
+    margin: 4px auto 8px auto;
 }
 
-ul {
-    padding-left: 5px;
-    list-style-position: inside;
-    margin-left: 0;
+#links > ul, #links > ul > li {
+    margin-bottom: 0;
 }
 
 #contact {
@@ -58,6 +78,27 @@ ul {
     font-weight: 600;
 }
 
+#projects {
+    margin: 5px 10%;
+}
+
+.bold > a {
+    background-color: gold;
+    padding: 2px;
+    border-radius: 3px;
+    color: darkcyan;
+}
+
+.bold > a:active {
+    background-color: goldenrod;
+    color: rgb(1, 117, 117);
+}
+
+.bold > a:visited {
+    background-color: darkcyan;
+    color: gold;
+}
+
 #links {
     margin: 5px 10%;
 }
@@ -67,10 +108,6 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-}
-
-#projects {
-    margin: 5px 10%;
 }
 
 #bio {
@@ -113,4 +150,11 @@ button {
     background-color: gold;
     border: 4px solid darkcyan;
     border-radius: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+    #mobile {
+        flex-wrap: wrap;
+    }
+    
 }
