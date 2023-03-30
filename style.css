@@ -1,0 +1,72 @@
+#body {
+    height: fit-content;
+    max-height: 100%;
+    width: fit-content;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: rgb(200, 225, 226);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+}
+
+#photo {
+    margin: 10px 20%;
+    height: 20%;
+    width: 60%;
+    border-radius: 50%;
+    border: 2px solid darkcyan;
+}
+
+#about {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#bio {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+p {
+    border-radius: 2px;
+    border: 2px solid darkcyan;
+    box-shadow: 10px 5px 5px rgb(1, 117, 117);
+    padding: 10%;
+    height: 80%;
+    margin: 10%;
+}
+
+h2 {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+#tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space around;
+    align-items: stretch;
+    margin-right: 0;
+}
+
+button {
+    height: 25%;
+    margin: 0;
+    background-color: gold;
+    border: 2px solid darkcyan;
+}
