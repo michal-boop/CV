@@ -1,7 +1,18 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Fradmcn;
     font-size: medium;
     overflow-x: hidden;
+    color: #1F1A38;
+}
+
+@font-face {
+    font-family: BigNoodle;
+    src: url(big_noodle_titling.ttf);
+}
+
+@font-face {
+    font-family: Fradmcn;
+    src: url(FRADMCN.TTF);
 }
 
 h1 {
@@ -9,6 +20,7 @@ h1 {
     text-align: center;
     margin: 10px auto 5px;
     color: #7b506f;
+    font-family: BigNoodle;
 }
 
 #container {
@@ -56,6 +68,7 @@ h1 {
     text-align: center;
     margin: 4px auto 20px auto;
     color: #7b506f;
+    font-family: BigNoodle;
 }
 
 #contact {
@@ -116,6 +129,7 @@ h1 {
     text-align: center;
     margin: 0 auto 10px auto;
     color: #7b506f;
+    font-family: BigNoodle;
 }
 
 #links > ul, #links > ul > li {
@@ -136,6 +150,7 @@ h1 {
     text-decoration: underline;
     margin: 20px auto 20px;
     color: #7b506f;
+    font-family: BigNoodle;
 }
 
 #bio_text {
@@ -260,6 +275,8 @@ button:active {
 
 h4 {
     color: #7b506f;
+    font-family: BigNoodle;
+    font-size: 1.2em;
 }
 
 #work > h4, #edu > h4 {
@@ -298,4 +315,8 @@ h4 {
         overflow-x: hidden;
     }
     
+    #work, #edu, #it, #soft {
+        border-left: 0;
+    }
+
 }
