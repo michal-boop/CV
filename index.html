@@ -47,13 +47,6 @@
                 </div>
             </div>    
             <hr>
-            <div id="links">
-                <h3>Links:</h3>
-                <ul id="links-info">
-                    <li class="link"><a href="https://www.linkedin.com/in/micha%C5%82-majzer-865611111/" target="_blank"><img src="linkedin-logo.png" style="width: 50px"></a></li>
-                    <li class="link"><a href="https://www.github.com/michal-boop" target="_blank"><img src="github-logo.png" style="width: 50px"></a></li>
-                </ul>
-            </div>
                 <!--<ul id="projects-info">
                     <li class="link"><a href="https://michal-boop.github.io/podcast-stary/" target="_blank">Template for a Podcast website</a> - <a href="https://github.com/michal-boop/podcast-stary" target="_blank">Github</a></li>
                     <li class="link"><a href="https://michal-boop.github.io/rock_paper_scissors/" target="_blank">Rock-Paper-Scissors Game</a> - <a href="https://github.com/michal-boop/rock_paper_scissors" target="_blank">Github</a></li>
@@ -62,12 +55,14 @@
         </section>
         <section id="bio">
             <h2>About me:</h2>
-            <p>I am ready for a new career and gaining experience in the
-                new field. I have started preparing myself for an IT job few
-                months ago by self-learning and joining courses.
-                My eagerness to learn, good communication skills,
-                management experience and English proficiency will surely
-                be an asset.</p>
+            <p id="bio_text">I am ready to take a path of a completely new career and to start gaining experience in the new field. Although my education was so far mostly humanistic-studies-oriented I have started preparing myself for an IT job last year by self-learning and joining variety of programming courses. I am getting comfortable with basics of Web Design at the moment but I am really just open to any oportunity to join this industry.</br></br> My eagerness to learn, determination, good communication skills, management experience and English proficiency can surely be an asset.</p>
+            <div id="links">
+                <h3>Links:</h3>
+                <ul id="links-info">
+                    <li class="link"><a href="https://www.linkedin.com/in/micha%C5%82-majzer-865611111/" target="_blank"><img src="linkedin-logo.png" style="width: 50px"></a></li>
+                    <li class="link"><a href="https://www.github.com/michal-boop" target="_blank"><img src="github-logo.png" style="width: 50px"></a></li>
+                </ul>
+            </div>
         </section>
         </div>
         <section id="tabs">
@@ -97,16 +92,91 @@
                     <li>
                         <p class="job_title">Various Hospitality Jobs</p>
                         <p class="job_dates">2010 - 2016</p>
-                        <p class="job_desc"> From being a bellboy in a hotel, through working pizza station at the italian restaurant, frying chickens for KFC, and tending busy bars in Glasgow to finally becoming a chef and opening my own business - I did have the whole experience and an exciting journey through Hospitality industry.</p>
+                        <p class="job_desc"> From being a bellboy in a hotel, through working pizza station at the italian restaurant,</br> frying chickens for KFC, and tending busy bars in Glasgow to becoming a chef</br> and opening my own business - I did have the whole experience and an exciting</br> journey through Hospitality industry.</p>
                     </li>
                 </ul>
             </div>
-            <button><img src="edu.png"></button>
-            <button><img src="it.png"></button>
-            <button><img src="soft.png"></button>
+            <button id="edu_btn"><img src="edu.png"></button>
+            <div class="hidden" id="edu">
+                <p class="job_title">EDUCATION</p>
+                <ul>
+                    <li>
+                        <p class="job_title">Green Digital Skills</p>
+                        <p class="job_name">INCO</p>
+                        <p class="job_dates">Mar 2023 - now</p>
+                    </li>
+                    <li>
+                        <p class="job_title">Foundations Course</p>
+                        <p class="job_name">Odin Project</p>
+                        <p class="job_dates">Jan 2023 - Mar 2023</p>
+                        <ul>
+                            <li>Computer and Web basics, GIT</li>
+                            <li>HTML, CSS, Flexbox, Grid</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="job_title">Multiple courses</p>
+                        <p class="job_name">Solo Learn, Mimo, Grasshopper</p>
+                        <p class="job_dates">Aug 2022 - Mar 2023</p>
+                        <ul>
+                            <li>Web Development Fundamentals</li>
+                            <li>Responsive Web Design</li>
+                            <li>HTML, CSS, JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="job_title">Filmmaking & Screenwriting</p>
+                        <p class="job_name">University of the West of Scotland</p>
+                        <p class="job_dates">Oct 2011 - May 2012</p>
+                        <p class="job_desc">Bachelor of Arts</p>
+                    </li>
+                    <li>
+                        <p class="job_title">Cultural Studies - Film</p>
+                        <p class="job_name">University of Lodz</p>
+                        <p class="job_dates">Oct 2009 - Jun 2011</p>
+                        <p class="job_desc">Bachelor of Arts</p>
+                    </li>
+                </ul>
+            </div>
+            <button id="it_btn"><img src="it.png"></button>
+            <div class="hidden" id="it">
+                <p class="job_title">IT SKILLS</p>
+                <ul id="skills">
+                    <li>GIT, GitHub, Terminal<p class="skill_bar"><span class="skill_prog" style="width:70%;"></span></p> </li>
+                    <li>HTML<p class="skill_bar"><span class="skill_prog" style="width:80%;"></span></p> </li>
+                    <li>CSS<p class="skill_bar"><span class="skill_prog" style="width:70%;"></span></p> </li>
+                    <li>JavaScript<p class="skill_bar"><span class="skill_prog" style="width:60%;"></span></p> </li> 
+                    <li>DevTools<p class="skill_bar"><span class="skill_prog" style="width:30%;"></span></p> </li>
+                    <li>Adobe Photoshop<p class="skill_bar"><span class="skill_prog" style="width:30%;"></span></p> </li>
+                </ul>
+                <p class="job_title">OTHER SKILLS</p>
+                <ul id="skills">
+                    <li>English</li>
+                    <li>B1 Driving License</li>                    
+                </ul>
+            </div>
+            <button id="soft_btn"><img src="soft.png"></button>
+            <div class="hidden" id="soft">
+                <p class="job_title">SOFT SKILLS</p>
+                <ul id="skills">
+                    <li>Leadership<p class="skill_bar"><span class="skill_prog" style="width:80%;"></span></p></li>
+                    <li>Determination<p class="skill_bar"><span class="skill_prog" style="width:90%;"></span></p></li>
+                    <li>Project Management<p class="skill_bar"><span class="skill_prog" style="width:80%;"></span></p></li>
+                    <li>Communication<p class="skill_bar"><span class="skill_prog" style="width:70%;"></span></p></li>
+                    <li>Creativity<p class="skill_bar"><span class="skill_prog" style="width:80%;"></span></p></li>
+                </ul>
+                <p class="job_title">HOBBIES & INTERESTS</p>
+                <ul id="skills">
+                    <li>Boardgames</li>
+                    <li>Books</li>
+                    <li>Films</li>
+                    <li>Cooking</li>
+                    <li>Event Organising</li>
+                </ul>
+            </div>        
         </section>
     </section>
-    
     <script src="myscript.js"></script>
 </body>
 </html>
