@@ -70,3 +70,20 @@ let offSoftFunction = function () {
 soft.addEventListener("click", onSoftFunction);
 softPage.addEventListener("mouseover", onSoftFunction);
 softPage.addEventListener("mouseout", offSoftFunction);
+
+const exit = document.getElementsByClassName("exit_btn");
+
+let closeTab = function () {
+    let hiddenSoft = document.getElementById("soft");
+    hiddenSoft.style.display = "none";
+    let hiddenIt = document.getElementById("it");
+    hiddenIt.style.display = "none";
+    let hiddenEdu = document.getElementById("edu");
+    hiddenEdu.style.display = "none";
+    let hiddenWork = document.getElementById("work");
+    hiddenWork.style.display = "none";
+};
+
+for (ex of exit) {
+    ex.addEventListener("click", closeTab);
+};

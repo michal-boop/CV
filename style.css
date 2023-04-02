@@ -1,5 +1,5 @@
 body {
-    font-family: Fradmcn;
+    font-family: Framdcn;
     font-size: medium;
     overflow-x: hidden;
     color: #1F1A38;
@@ -11,8 +11,8 @@ body {
 }
 
 @font-face {
-    font-family: Fradmcn;
-    src: url(FRADMCN.TTF);
+    font-family: Framdcn;
+    src: url(FRAMDCN.TTF);
 }
 
 h1 {
@@ -169,8 +169,6 @@ h1 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
     margin-right: 0;
 }
 
@@ -196,11 +194,6 @@ button:active {
     box-shadow: 10px 5px 5px #dd99bb;
 }
 
-.hidden {
-    right: -50%;
-    padding: 2% 7% 2% 1%;
-}
-
 .job_title {
     margin-top: 5px;
 }
@@ -223,9 +216,10 @@ button:active {
     font-style: italic;
 }
 
-#work {
-    display: none; 
-    top: 0%;
+
+.hidden {    
+    padding: 2% 7% 2% 1%;
+    right: -60%;
     text-align: left;
     position: absolute;
     background-color: #dd99bb;
@@ -233,50 +227,46 @@ button:active {
     border-right: 0;
     border-radius: 10px 0 0 10px;
     box-shadow: 10px 5px 5px #dd99bb;
+}
+
+#work {
+    display: none; 
+    top: 0%;
 }
 
 #edu {
     display: none;
     top: 15%;
-    text-align: left;
-    position: absolute;
-    background-color: #dd99bb; 
-    border: 4px solid #7b506f;
-    border-right: 0;
-    border-radius: 10px 0 0 10px;
-    box-shadow: 10px 5px 5px #dd99bb;
 }
 
 #it {
     padding-left: 30px;
     display: none;
-    top: 30%;
-    text-align: left;
-    position: absolute;
-    background-color: #dd99bb;
-    border: 4px solid #7b506f;
-    border-right: 0;
-    border-radius: 10px 0 0 10px;
-    box-shadow: 10px 5px 5px #dd99bb;
+    top: 25%;
 }
 
 #soft {
     padding-left: 30px;
     display: none;
-    top: 30%;
-    text-align: left;
-    position: absolute;
-    background-color: #dd99bb;
-    border: 4px solid #7b506f;
-    border-right: 0;
-    border-radius: 10px 0 0 10px;
-    box-shadow: 10px 5px 5px #dd99bb;
+    bottom: 0;
+}
+
+.exit {
+    display: none;
+}
+
+.exit_btn {
+    font-weight: bolder;
+    background-color:#ead7d1;
+    border: 2px solid #7b506f;
+    border-radius: 5%;
 }
 
 h4 {
     color: #7b506f;
     font-family: BigNoodle;
     font-size: 1.2em;
+    display: inline-block;
 }
 
 #work > h4, #edu > h4 {
@@ -316,7 +306,26 @@ h4 {
     }
     
     #work, #edu, #it, #soft {
-        border-left: 0;
+        border-right: 0;
     }
 
+    #work {
+        padding-left: 10%;
+        padding-right: 15%;
+    }
+
+    #edu, #it, #soft {
+        padding-left: 10%;
+        padding-right: 0%;
+    }
+
+    .hidden {
+        right: 0;
+        left: 0;
+        padding: 2%;
+    }
+
+    .exit {
+        display: block;
+    }
 }
