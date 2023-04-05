@@ -309,14 +309,28 @@ h4 {
         border-right: 0;
     }
 
+    .tight {
+        padding-right: 20%;
+    }
+
     #work {
-        padding-left: 10%;
+        padding-left: 5%;
         padding-right: 15%;
     }
 
     #edu, #it, #soft {
-        padding-left: 10%;
+        padding-left: 5%;
         padding-right: 0%;
+    }
+
+    #it {
+        top: 100%;
+        bottom: auto;
+    }
+
+    #soft {
+        top: 120%;
+        bottom: auto;
     }
 
     .hidden {
