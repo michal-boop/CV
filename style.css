@@ -342,4 +342,8 @@ h4 {
     .exit {
         display: block;
     }
+
+    #work_btn > img, #edu_btn > img, #it_btn >img, #soft_btn > img {
+        display: none;
+    }
 }
