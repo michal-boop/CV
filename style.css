@@ -194,11 +194,7 @@ button:active {
     box-shadow: 10px 5px 5px #dd99bb;
 }
 
-.job_title {
-    margin-top: 5px;
-}
-
-.job_title, .job_name, .job_dates, .job_desc  {
+.job_name, .job_dates, .job_desc  {
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -208,12 +204,13 @@ button:active {
 }
 
 .job_title {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 2px;;
     font-weight: bold;
 }
 
 .job_dates {
-    font-style: italic;
+    font-style: italic;;
 }
 
 
@@ -236,13 +233,13 @@ button:active {
 
 #edu {
     display: none;
-    top: 15%;
+    top: 0%;
 }
 
 #it {
     padding-left: 30px;
     display: none;
-    top: 25%;
+    bottom: 0%;
 }
 
 #soft {
